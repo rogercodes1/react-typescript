@@ -3,15 +3,15 @@ import logo from './logo.svg';
 import './App.css';
 import Message from "./Message";
 
+
+const initialState = {
+  name: 'Joe',
+  message: 'Typescipt bruh'
+}
+
+type State = Readonly<typeof initialState>
 class App extends Component<any> {
 
-  componentWillMount(){
-    console.log('Almost there');
-
-  }
-  componentDidMount(){
-    console.log('Finally.. Here!');
-  }
   render() {
     let firstValue: number = 100;
     let secValue: boolean = true;
@@ -31,7 +31,7 @@ class App extends Component<any> {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Message message='Simple message'/>
+          <Message name='Broseph' message='Simple message'/>
           <p>
            The value {firstValue} is of {typeof firstValue} type! <br/>
            The value {aTuple[0]} is of {typeof aTuple[0]} type! <br/>

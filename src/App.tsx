@@ -4,15 +4,10 @@ import './App.css';
 import Message from "./Message";
 
 
-const initialState = {
-  name: 'Joe',
-  message: 'TypeScipt bro'
-}
 
-type State = Readonly<typeof initialState>
-class App extends Component<any, State> {
 
-  readonly state: State = initialState;
+class App extends Component {
+
 
   render() {
     let firstValue: number = 100;
@@ -33,7 +28,7 @@ class App extends Component<any, State> {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Message name='Broseph' message='Simple message'/>
+          <Message />
           <p>
            The value {firstValue} is of {typeof firstValue} type! <br/>
            The value {aTuple[0]} is of {typeof aTuple[0]} type! <br/>

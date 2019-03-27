@@ -10,6 +10,7 @@ class App extends Component {
 
 
   render() {
+    // Examples on how to call variables in TypeScript
     let firstValue: number = 100;
     let secValue: boolean = true;
     let thirdVal: number[] = [2,4,6];

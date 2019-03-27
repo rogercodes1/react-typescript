@@ -6,11 +6,13 @@ import Message from "./Message";
 
 const initialState = {
   name: 'Joe',
-  message: 'Typescipt bruh'
+  message: 'TypeScipt bro'
 }
 
 type State = Readonly<typeof initialState>
-class App extends Component<any> {
+class App extends Component<any, State> {
+
+  readonly state: State = initialState;
 
   render() {
     let firstValue: number = 100;

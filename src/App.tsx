@@ -10,6 +10,14 @@ class App extends Component {
     let arrOpt: Array<string> = ["HEY", "Hello", "World"];
     // tuple
     let aTuple: [string, number] = ["Roger", 100]; 
+    // enum
+    enum Codes {first = 1, second = 2};
+    // any 
+    let firstName: any = "Mario";
+    // void 
+    const warning = (): void => {
+      console.log('Warning');
+    }
     return (
       <div className="App">
         <header className="App-header">

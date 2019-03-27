@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
 const initialState = {
-    name: 'Joe',
-    message: 'TypeScipt bro'
+    name: 'Ruben',
+    message: 'Working with HOC'
   }
   type State = Readonly<typeof initialState>
 
